@@ -11,6 +11,7 @@ local playButton
 local settingsButton
 local creditsButton
 local storeButton
+local rankButton
 --global to this file
 --sprite("")
 
@@ -18,7 +19,8 @@ function MainScene:init()
 playButton = Button("Dropbox:Blue Forward Circle Button", vec2(WIDTH/2, HEIGHT/2))
 settingsButton = Button("Dropbox:Blue Settings Button", vec2(80, 80))
 creditsButton = Button("Dropbox:Blue Level Menu Button", vec2(950, 80))
-storeButton = Button("")
+storeButton = Button("Dropbox:shop icon", vec2(100, HEIGHT-100))
+rankButton=Button("Dropbox:Star Black", vec2(WIDTH-100, HEIGHT-100))
 
 
     
@@ -38,6 +40,8 @@ function MainScene:draw()
    playButton:draw()
     settingsButton:draw()
     creditsButton:draw()
+    storeButton:draw()
+    rankButton:draw()
 end
 
 function MainScene:touched(touch)
@@ -55,5 +59,12 @@ function MainScene:touched(touch)
     if(creditsButton.selected == true) then
         Scene.Change("credits")
     end
-        
+    storeButton:touched(touch)
+    if(storeButton.selected == true) then
+        Scene.Change("store")
+    end
+    rankButton:touched(touch)
+    if(rankButton.selected == true) then
+        Scene.Change("leaderboard")
+    end
 end

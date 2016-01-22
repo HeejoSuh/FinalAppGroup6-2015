@@ -7,13 +7,20 @@
 	<key>Buffer Order</key>
 	<array>
 		<string>Main</string>
+		<string>Ranking</string>
 		<string>SplashScreenScene</string>
 		<string>GameLogoScene</string>
 		<string>MainScene</string>
+		<string>EasyStore</string>
+		<string>MediumStore</string>
+		<string>HardStore</string>
+		<string>StarsCollect</string>
+		<string>Store</string>
 		<string>TutorialScene</string>
 		<string>SettingsScene</string>
 		<string>CreditsScene</string>
 		<string>StoreScene</string>
+		<string>Unlock</string>
 		<string>WorldScene</string>
 		<string>EasyWorldScene</string>
 		<string>MediumWorldScene</string>
